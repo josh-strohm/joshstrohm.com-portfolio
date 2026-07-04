@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/work",
     "/services",
     "/about",
+    "/businesses",
     "/now",
     "/contact",
     "/calendar",

@@ -11,6 +11,8 @@ export const site = {
   tagline: "I build AI systems that do real work for real businesses.",
   calendarEmbedUrl:
     "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2lnFVDVF4oKIzE6ZHDeeyE7cLSIGsE79nUYZPvsPWxz8a6Do7nJDVXq1uwyqJVtig3pMaB3tg7?gv=true",
+  contactWebhookUrl:
+    "https://n8n.strohmpartners.com/webhook/7692e1a9-b9a9-48fb-808c-078db2b20530",
   social: {
     linkedin: "https://www.linkedin.com/in/joshua-w-strohm",
     github: "https://github.com/josh-strohm",

@@ -21,8 +21,8 @@ export default function RootLayout({
       id="top"
     >
       <body className="min-h-screen antialiased">
+        <JsonLd />
         <PageDotGrid>
-          <JsonLd />
           <Nav />
           <main>{children}</main>
           <Footer />

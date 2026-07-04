@@ -15,19 +15,18 @@ export function ContactForm() {
     const data = new FormData(form);
 
     try {
-      // PLACEHOLDER: Wire to your form endpoint before launch
-      // Example: await fetch('/api/contact', { method: 'POST', body: data })
-      // Or use Formspree, Netlify Forms, etc.
-      //
-      // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      //   method: 'POST',
-      //   body: data,
-      //   headers: { Accept: 'application/json' },
-      // });
-      // if (!response.ok) throw new Error('Failed');
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          message: data.get("message"),
+        }),
+      });
 
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      console.log("Form submission (placeholder):", Object.fromEntries(data));
+      if (!response.ok) throw new Error("Submission failed");
+
       setStatus("success");
       form.reset();
     } catch {
