@@ -52,27 +52,27 @@ export default function AboutPage() {
             <ScrollReveal className="md:col-span-7" delay={100}>
               <div className="space-y-6 text-text2">
                 <p>
-                  I&apos;m Josh Strohm — founder of Strohm Partners LLC and Strohm
-                  Media, based in Altoona, PA and working remote with clients
-                  nationwide.
+                  I&apos;m Josh Strohm, founder of Strohm Partners LLC and
+                  Strohm Media. I&apos;m based in Altoona, PA and work with
+                  clients nationwide.
                 </p>
                 <p>
-                  Sixteen years in client service and technical operations gave
-                  me a clear picture of where small businesses bleed time: manual
-                  follow-up, disconnected tools, and processes that depend on
-                  someone remembering to do the thing. I started this practice
-                  to fix that with systems that actually run.
+                  Sixteen years in client service and technical operations showed
+                  me exactly where small businesses lose time: manual follow-ups,
+                  disconnected tools, and processes that rely on someone
+                  remembering to act. I built this practice to replace those gaps
+                  with systems that run on their own.
                 </p>
                 <p>
-                  I build custom AI agents, automations, CRMs, and websites for
-                  service businesses — HVAC, plumbing, legal, dental, consulting.
-                  Every system I ship is one I&apos;d run myself. Hermes, my
-                  personal AI employee, handles my own back office. That&apos;s
-                  the bar.
+                  I create custom AI agents, automations, CRMs, and websites for
+                  service businesses like HVAC, plumbing, legal, dental, and
+                  consulting. Every system I deliver is one I would run myself.
+                  Hermes, my own AI employee, already handles my back office.
+                  That sets the standard.
                 </p>
                 <p>
                   No hype. No black boxes. If something won&apos;t work for your
-                  business, I&apos;ll tell you before we start.
+                  business, I&apos;ll say so before we begin.
                 </p>
               </div>
             </ScrollReveal>
