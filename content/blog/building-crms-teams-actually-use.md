@@ -7,32 +7,78 @@ image: "/blog/images/building-crms-teams-actually-use/building-crms-teams-actual
 
 I've seen the same pattern a dozen times. A business buys or builds a CRM, runs training, sends out logins, and three months later the team is back on spreadsheets and group texts.
 
-The CRM wasn't broken. It simply didn't match how the team actually works.
+The CRM wasn't broken. **It simply didn't match how the team actually works.**
 
 When the tool fights the workflow, the workflow wins.
 
-Map what happens today before you define a single field. Ask who enters the lead, when status changes, what triggers a follow-up, and where people already cheat the system because the official path feels too slow. Build to that reality first. Tighten it later. Designing for an ideal process while the team runs on workarounds just produces shelfware.
+## Start with reality, not the textbook
 
-Small teams need signal, not noise. Four fields cover most of what matters:
+Map what happens today before you define a single field. Ask:
 
-- Who this is (name, contact, source)
-- What they need (one plain-language line)
-- The next action (call, quote, schedule, close)
-- When it happens (a real date, not ASAP)
+- Who enters the lead?
+- When does status change?
+- What triggers a follow-up?
+- Where do people already cheat the system because the official path feels too slow?
+
+Build to that reality first. Tighten it later. Designing for an ideal process while the team runs on workarounds just produces shelfware.
+
+### The four fields that matter
+
+Small teams need signal, not noise:
+
+1. **Who is this?** Name, contact, source
+2. **What do they need?** One plain-language line
+3. **What's the next action?** Call, quote, schedule, close
+4. **When?** A real date, not ASAP
 
 Everything else stays optional until those four run without friction.
 
-Every extra field is something someone has to keep updated. Delete or automate any field that goes unused for thirty days. A CRM with six fields that everyone uses beats one with sixty fields that everyone ignores.
+## Less fields, more discipline
 
-Common mistakes include twelve pipeline stages when the team only thinks in new, active, or done; required fields no one knows how to fill; duplicate entry from forms into the CRM; and no workable path for people who live on their phones between jobs.
+Every extra field is something someone has to keep updated. I follow a simple rule:
 
-Let the CRM update itself when work happens elsewhere. A form submission creates the record. A calendar booking moves the status to scheduled. An invoice paid marks the job complete. No reply in seventy-two hours creates a task for a human. Tools like n8n sit between your existing stack and the CRM so the team keeps working the way they already do while the system catches up behind them.
+> If nobody has used a field in 30 days, delete it or automate it.
 
-A CRM is working when the team stops maintaining a parallel system in Notes, Excel, or a group chat. Until then it is just shelfware with a monthly bill.
+Common mistakes I see in custom CRM builds:
 
-You know you have reached that point when new leads appear without anyone asking if they were entered, the status numbers are accurate enough to trust on a Monday morning, handoffs happen without verbal briefings, and the owner is no longer the only person who knows where things stand.
+- **Twelve pipeline stages** when the team only thinks in new, active, or done
+- **Required fields** no one knows how to fill
+- **Duplicate entry** from forms into the CRM
+- **No mobile path** for people who live on their phones between jobs
 
-Six months from now someone new will log in with no design-meeting context and zero patience for unclear fields. Design for that person. Use plain labels. Write one-line instructions inside the tool. Keep the main path to three clicks or fewer.
+A CRM with six fields that everyone uses beats one with sixty fields that everyone ignores.
+
+## Automate the boring parts
+
+Let the CRM update itself when work happens elsewhere:
+
+- Form submission → new record created
+- Calendar booking → status moves to scheduled
+- Invoice paid → job marked complete
+- No reply in 72 hours → task created for a human follow-up
+
+Tools like `n8n` sit between your existing stack and the CRM so the team keeps working the way they already do while the system catches up behind them.
+
+## The bar for "done"
+
+A CRM is working when the team **stops maintaining a parallel system** in Notes, Excel, or a group chat.
+
+Until then it is just shelfware with a monthly bill.
+
+Signs you're actually there:
+
+- New leads appear without anyone asking if they were entered
+- Status numbers are accurate enough to trust on a Monday morning
+- Handoffs happen without verbal briefings
+- The owner is no longer the only person who knows where things stand
+
+---
+
+## Build for the person who inherits it
+
+Six months from now someone new will log in with no design-meeting context and zero patience for unclear fields.
+
+Design for that person. Use plain labels. Write one-line instructions inside the tool. Keep the main path to three clicks or fewer.
 
 Demos are easy. Adoption is the work.
 

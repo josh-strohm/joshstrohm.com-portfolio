@@ -9,17 +9,52 @@ Demos look impressive in a thirty-minute call. Production systems run when no on
 
 Most AI projects fail in that gap. I stopped selling into it.
 
-A demo shows someone can connect an API and script a convincing flow. It says nothing about whether the workflow holds up at eleven at night on an edge case, whether the team will use the output, whether the system handles a third-party API change, or whether anyone can maintain it once the builder leaves. Something that shines in a meeting often fails in daily operations.
+## What a demo actually proves
 
-I changed how I sell. Instead of starting with prototypes, I show workflows already running in real businesses. The pitch moves from "imagine if every lead got a reply in two minutes" to "last week we handled forty-seven leads, booked forty-one, with no manual work." Clients see results instead of a vision.
+A demo shows someone can connect an API and script a convincing flow. It says nothing about:
 
-I only ship what I would run on my own business.
+- Whether the workflow holds up at eleven at night on an edge case
+- Whether the team will use the output
+- Whether the system handles a third-party API change
+- Whether anyone can maintain it once the builder leaves
 
-Every project must pass one test: would I use this myself? Hermes, the AI employee I built, now handles my scheduling, follow-ups, and intake, the tasks that used to take my afternoons. The same rules apply to client work.
+*Something that shines in a meeting* often fails in daily operations.
 
-That requires real error handling, readable logs when things break, a handoff process anyone can follow, and documentation written for the person who takes over six months later.
+## What changed in how I sell
 
-When hiring, ask three questions. Can they show a live system, not a sandbox? Who keeps it running after they leave? What happens when the AI makes a mistake? Vague answers mean you're buying a demo. Demos are simple. Real systems are the hard part.
+I changed how I sell. Instead of starting with prototypes, I show workflows already running in real businesses. The conversation shifts immediately:
+
+1. **Before:** "Imagine if every lead got a reply in two minutes."
+2. **After:** "Last week we handled forty-seven leads, booked forty-one, with no manual work."
+
+Clients see results instead of a vision.
+
+> I only ship what I would run on my own business.
+
+## The standard I use now
+
+Every project must pass one test: **would I use this myself?**
+
+Hermes, the AI employee I built, now handles my scheduling, follow-ups, and intake, the tasks that used to take my afternoons. The same rules apply to client work.
+
+That means:
+
+- Real error handling, not happy-path-only flows
+- Readable logs when things break
+- A handoff process anyone can follow
+- Documentation written for the person who takes over six months later
+
+---
+
+## What this means if you're hiring someone
+
+Ask three questions before you sign anything:
+
+1. Can they show a live system, not a sandbox?
+2. Who keeps it running after they leave?
+3. What happens when the AI makes a mistake?
+
+Vague answers mean you're buying a demo. Demos are simple. Real systems are the hard part.
 
 Production systems are the only thing worth selling or buying.
 
