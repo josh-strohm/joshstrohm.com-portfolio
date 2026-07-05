@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -56,8 +57,15 @@ export function Nav() {
       >
         <Link
           href="/"
-          className="font-display text-base font-semibold tracking-tight text-text transition-colors hover:text-accent md:text-lg"
+          className="flex items-center gap-3 font-display text-base font-semibold tracking-tight text-text transition-colors hover:text-accent md:text-lg"
         >
+          <Image
+            src="/assets/joshstrohm-portfolio-image.png"
+            alt="Josh Strohm"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-full object-cover"
+          />
           Josh Strohm
         </Link>
 
