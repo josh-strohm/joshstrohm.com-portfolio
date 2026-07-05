@@ -5,87 +5,35 @@ excerpt: "If the CRM fights how your team works, they won't use it. Full stop."
 image: "/blog/images/building-crms-teams-actually-use/building-crms-teams-actually-use.jpg"
 ---
 
-I've seen it a dozen times: a business buys or builds a CRM, runs training, sends the login links, and three months later everyone is back on spreadsheets and group texts.
+I've seen the same pattern a dozen times. A business buys or builds a CRM, runs training, sends out logins, and three months later the team is back on spreadsheets and group texts.
 
-The CRM wasn't broken. **It was wrong for how that team actually operates.**
+The CRM wasn't broken. It simply didn't match how the team actually works.
 
-If the tool fights the workflow, the workflow wins. Every time.
+When the tool fights the workflow, the workflow wins.
 
-## Start with reality, not the textbook
+Map what happens today before you define a single field. Ask who enters the lead, when status changes, what triggers a follow-up, and where people already cheat the system because the official path feels too slow. Build to that reality first. Tighten it later. Designing for an ideal process while the team runs on workarounds just produces shelfware.
 
-Before a single field gets defined, map what happens *today* — not what should happen in theory.
+Small teams need signal, not noise. Four fields cover most of what matters:
 
-Ask:
+- Who this is (name, contact, source)
+- What they need (one plain-language line)
+- The next action (call, quote, schedule, close)
+- When it happens (a real date, not ASAP)
 
-- Who enters the lead? (Owner? Front desk? A tech in the field?)
-- When does status actually change? (When they remember? When the job closes?)
-- What triggers a follow-up? (A sticky note? A manager asking?)
-- Where do people cheat the system because the official path is too slow?
+Everything else stays optional until those four run without friction.
 
-Build to that reality first. Tighten it second. If you design for the ideal process while the team runs on workarounds, you'll build shelfware.
+Every extra field is something someone has to keep updated. Delete or automate any field that goes unused for thirty days. A CRM with six fields that everyone uses beats one with sixty fields that everyone ignores.
 
-### The four fields that matter
+Common mistakes include twelve pipeline stages when the team only thinks in new, active, or done; required fields no one knows how to fill; duplicate entry from forms into the CRM; and no workable path for people who live on their phones between jobs.
 
-Small teams don't need enterprise pipeline stages. They need signal, not noise:
+Let the CRM update itself when work happens elsewhere. A form submission creates the record. A calendar booking moves the status to scheduled. An invoice paid marks the job complete. No reply in seventy-two hours creates a task for a human. Tools like n8n sit between your existing stack and the CRM so the team keeps working the way they already do while the system catches up behind them.
 
-1. **Who is this?** — Name, contact, source
-2. **What do they need?** — One line, plain language
-3. **What's the next action?** — Call, quote, schedule, close
-4. **When?** — A real date, not "ASAP"
+A CRM is working when the team stops maintaining a parallel system in Notes, Excel, or a group chat. Until then it is just shelfware with a monthly bill.
 
-Everything else is optional until those four are automatic.
+You know you have reached that point when new leads appear without anyone asking if they were entered, the status numbers are accurate enough to trust on a Monday morning, handoffs happen without verbal briefings, and the owner is no longer the only person who knows where things stand.
 
-## Less fields, more discipline
-
-Every field you add is a field someone has to maintain. I follow a simple rule:
-
-> If nobody has used a field in 30 days, delete it or automate it.
-
-Common traps I see in custom CRM builds:
-
-- **12 pipeline stages** when the team only thinks in "new / active / done"
-- **Required fields** that nobody knows how to fill out
-- **Duplicate entry** — lead comes in via form, then someone re-types it into the CRM
-- **No mobile path** for people who live on their phone between jobs
-
-A CRM with six fields that everyone uses beats a CRM with sixty fields that everyone ignores.
-
-## Automate the boring parts
-
-The CRM should update itself when the work happens elsewhere:
-
-- Form submission → new record created
-- Calendar booking → status moves to "scheduled"
-- Invoice paid → job marked complete
-- No response in 72 hours → task created for a human follow-up
-
-Tools like `n8n` sit between your existing stack and your CRM so people aren't doing data entry twice. The team keeps working the way they already work. The system catches up behind them.
-
-## The bar for "done"
-
-A CRM is working when the team **stops maintaining a parallel system** in Notes, Excel, or a group chat.
-
-Until then, it's shelfware with a monthly invoice.
-
-Signs you're actually there:
-
-- New leads show up without anyone asking "did you enter that?"
-- Status is accurate enough that you trust a Monday morning report
-- Handoffs between people don't require a verbal briefing
-- The owner isn't the only person who knows where things stand
-
----
-
-## Build for the person who inherits it
-
-Six months from now, someone new will use this system. They won't have been in the design meetings. They'll have:
-
-- A login
-- A busy afternoon
-- Zero patience for unclear fields
-
-Design for that person. Use plain labels. Write one-line instructions inside the tool where it helps. Keep the happy path to three clicks or fewer.
+Six months from now someone new will log in with no design-meeting context and zero patience for unclear fields. Design for that person. Use plain labels. Write one-line instructions inside the tool. Keep the main path to three clicks or fewer.
 
 Demos are easy. Adoption is the work.
 
-If you're outgrowing spreadsheets and want a CRM your team will actually open, [let's talk](/contact). I build these for service businesses — HVAC, plumbing, legal, dental, consulting — and I start with how your team works today, not how a SaaS template thinks they should.
+If you're outgrowing spreadsheets and want a CRM your team will actually open, reach out. I build these for service businesses like HVAC, plumbing, legal, dental, and consulting, and I always start with how your team works today. [Get in touch](/contact).
