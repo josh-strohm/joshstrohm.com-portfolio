@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CtaBanner } from "@/components/CtaBanner";
+import { formatPostDate, getAllPosts } from "@/lib/blog";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = pageMetadata(
@@ -17,14 +19,8 @@ const principles = [
   "Honest over comfortable",
 ];
 
-// PLACEHOLDER: Replace with real writing links before launch
-const writing = [
-  { title: "Why I stopped selling AI demos", date: "2026-01-15" },
-  { title: "The real cost of manual follow-up", date: "2025-11-02" },
-  { title: "Building CRMs that teams actually use", date: "2025-09-18" },
-];
-
 export default function AboutPage() {
+  const posts = getAllPosts().slice(0, 5);
   return (
     <>
       <section className="section-padding pt-32 md:pt-40">
@@ -93,24 +89,30 @@ export default function AboutPage() {
             </div>
           </ScrollReveal>
 
-          {/* Writing — PLACEHOLDER */}
           <ScrollReveal className="mt-20">
-            <h2 className="font-mono-label mb-2 text-muted">Writing</h2>
-            <p className="mb-8 text-sm text-muted">
-              {/* PLACEHOLDER: Replace with real posts */}
-              Placeholder links — add real URLs before launch.
-            </p>
+            <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <h2 className="font-mono-label text-muted">Writing</h2>
+              <Link
+                href="/blog"
+                className="font-mono-label text-accent link-underline"
+              >
+                All articles →
+              </Link>
+            </div>
             <ul className="divide-y divide-border">
-              {writing.map((post) => (
-                <li key={post.title}>
-                  <span className="flex flex-col gap-1 py-5 sm:flex-row sm:items-center sm:justify-between">
-                    <span className="text-text transition-colors hover:text-accent">
+              {posts.map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex flex-col gap-1 py-5 sm:flex-row sm:items-center sm:justify-between"
+                  >
+                    <span className="text-text transition-colors group-hover:text-accent">
                       {post.title}
                     </span>
                     <span className="font-mono-label text-muted">
-                      {post.date}
+                      {formatPostDate(post.date)}
                     </span>
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>

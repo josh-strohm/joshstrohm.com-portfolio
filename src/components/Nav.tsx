@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   { href: "/work", label: "Work" },
+  { href: "/blog", label: "Blog" },
   { href: "/services", label: "Services" },
   { href: "/businesses", label: "Businesses" },
   { href: "/about", label: "About" },
@@ -14,6 +15,7 @@ const links = [
 
 function isActive(pathname: string, href: string) {
   if (href === "/work") return pathname.startsWith("/work");
+  if (href === "/blog") return pathname.startsWith("/blog");
   return pathname === href;
 }
 
